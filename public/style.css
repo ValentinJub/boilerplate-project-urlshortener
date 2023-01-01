@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
-  color: #222;
-  background-color: #fff;
+  color: #D4F6F0;
+  background-color: #8167CB;
   text-align: center;
   line-height: 1.4em;
 }
@@ -16,7 +16,9 @@ h3 {
   margin-top: 30px;
 }
 
-
+#form {
+  background-color: #6240BF;
+}
 
 .user-stories li {
   margin-bottom: 1em;
@@ -43,4 +45,29 @@ input {
 input[type='text'] {
   width: 220px;
   text-align: center;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #e393dd 5%, #d950d0 100%);
+	background-color:#80b5ea;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }

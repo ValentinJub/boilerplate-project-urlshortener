@@ -3,11 +3,7 @@
 <html>
   <head>
     <title>URL Shortener Microservice | freeCodeCamp.org</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://cdn.freecodecamp.org/universal/favicons/favicon-16x16.png"
-    />
+    <link rel="shortcut icon" href="https://preview.redd.it/quch0lcijir91.png?width=640&crop=smart&auto=webp&s=9ac25854cc1492966d6058cfcf55f5e0eb7c2990" type="image/x-icon"/>
     <link href="/public/style.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -16,17 +12,20 @@
     <main>
       <section>
         <form action="api/shorturl" method="POST">
-          <fieldset>
-            <legend>URL Shortener</legend>
+          <fieldset id="form">
             <label for="url_input">URL:</label>
             <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
-            <input type="submit" value="POST URL" />
+            <input type="submit" class="myButton" value="POST URL" />
+            <legend>URL Shortener</legend>
           </fieldset>
         </form>
+        <h2>Usage:</h2>
+        <p>You can <code>POST</code> a URL to <code>/api/shorturl</code> and get a JSON response with original_url and short_url properties</p>
+        <p>When you visit <code>/api/shorturl/&lt;short_url&gt;</code>, you will be redirected to the original URL.</p>
       </section>
     </main>
     <footer>
-      <p>By <a href="https://www.freecodecamp.org/">freeCodeCamp</a></p>
+      by <a href="https://codepen.io/ValentinW">Valentin Wissler</a>
     </footer>
   </body>
 </html>
